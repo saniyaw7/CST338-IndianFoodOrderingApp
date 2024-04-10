@@ -1,1 +1,1 @@
-# CST338-Project2
+# CST338-IndianFoodOrderingApp
