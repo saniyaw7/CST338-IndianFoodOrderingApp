@@ -1,1 +1,1 @@
-# CST338-IndianFoodOrderingApp
+# CST338-IndianRestaurantApp
