@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Image and Button for Product 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product1Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product1_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product1Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 1" />
+    </LinearLayout>
+
+    <!-- Image and Button for Product 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product2Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product2_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product2Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 2" />
+    </LinearLayout>
+
+    <!-- Image and Button for Product 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product3Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product3_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product3Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 3" />
+    </LinearLayout>
+
+    <!-- Image and Button for Product 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product4Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product4_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product4Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product5Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product5_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product5Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product6Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product6_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product6Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product7Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product7_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product7Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 7" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/product8Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/resource__"
+            android:contentDescription="@string/product8_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/product8Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product 8" />
+    </LinearLayout>
+
+</LinearLayout>

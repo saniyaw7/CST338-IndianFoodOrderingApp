@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">pithlabhakri</string>
+    <string name="product1_description">L1</string>
+    <string name="product2_description">L2</string>
+    <string name="product3_description">L3</string>
+    <string name="product4_description">L4</string>
+    <string name="product5_description">L5</string>
+    <string name="product6_description">L6</string>
+    <string name="product7_description">L7</string>
+    <string name="product8_description">L8</string>
+</resources>
