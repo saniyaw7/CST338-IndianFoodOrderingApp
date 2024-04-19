@@ -35,26 +35,27 @@ public class LoginActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString().trim();
 
         if ("testuser1".equals(username) && "testuser1".equals(password)) {
-            // Navigate to LandingPage or another activity
-            navigateToLandingPage(false); // false because it's not an admin
+            // Navigate to LandingPage for regular user
+            navigateToLandingPage(false);
         } else if ("admin2".equals(username) && "admin2".equals(password)) {
-            // Navigate to LandingPage or another activity
-            navigateToLandingPage(true); // true because it's an admin
+            // Navigate to AdminActivity for admin user
+            navigateToAdminPage();
         } else {
             Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show();
         }
     }
 
     private void navigateToLandingPage(boolean isAdmin) {
-        // Save user login status using SharedPreferences if needed
-        // For demonstration, let's assume "isLoggedIn" is a boolean key and isAdmin is another key
-        // SharedPreferences sharedPreferences = getSharedPreferences("user_pref", MODE_PRIVATE);
-        // SharedPreferences.Editor editor = sharedPreferences.edit();
-        // editor.putBoolean("isLoggedIn", true);
-        // editor.putBoolean("isAdmin", isAdmin);
-        // editor.apply();
-
+        // You can perform any necessary tasks before navigating
+        // For now, let's navigate to MenuActivity
         Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void navigateToAdminPage() {
+        // Navigate to AdminActivity
+        Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
         startActivity(intent);
         finish();
     }

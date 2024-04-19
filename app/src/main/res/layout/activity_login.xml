@@ -3,12 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FF914D"
+    >
+
+    <ImageView
+        android:id="@+id/product8Image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:src="@drawable/pblogo"
+        android:contentDescription="@string/product8_description"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"/>
 
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:hint="Username" />
 
     <EditText
@@ -22,13 +35,15 @@
         android:id="@+id/userTypeRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
         <RadioButton
             android:id="@+id/userRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User" />
+            android:text="User"
+            />
 
         <RadioButton
             android:id="@+id/adminRadioButton"
@@ -38,9 +53,15 @@
     </RadioGroup>
 
     <Button
+
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#6D0016"
+        android:textSize="15sp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
         android:text="Login" />
 
 </LinearLayout>

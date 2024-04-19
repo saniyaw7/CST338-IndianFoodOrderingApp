@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_horizontal">
-
+    android:gravity="center_horizontal"
+    android:background="#FF914D"
+    >
+    
     <!-- Image and Button for Product 1 -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,18 +19,26 @@
 
         <ImageView
             android:id="@+id/product1Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/vadapav"
             android:contentDescription="@string/product1_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VADA PAV - $9.99"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product1Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 1" />
+            android:backgroundTint="#6D0016"
+            android:text=" A D D"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <!-- Image and Button for Product 2 -->
@@ -40,18 +50,27 @@
 
         <ImageView
             android:id="@+id/product2Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/biryani"
             android:contentDescription="@string/product2_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHICKEN BIRYANI - $20.00"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product2Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 2" />
+            android:text="A D D"
+            android:backgroundTint="#6D0016"
+            android:textStyle="bold"
+            />
     </LinearLayout>
 
     <!-- Image and Button for Product 3 -->
@@ -63,18 +82,26 @@
 
         <ImageView
             android:id="@+id/product3Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/poha"
             android:contentDescription="@string/product3_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POHA - $15.00"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product3Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 3" />
+            android:text="A D D"
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
     </LinearLayout>
 
     <!-- Image and Button for Product 4 -->
@@ -86,18 +113,26 @@
 
         <ImageView
             android:id="@+id/product4Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/thali"
             android:contentDescription="@string/product4_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VEG KOLHAPURI THALI - $40.00"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product4Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 4" />
+            android:text="A D D"
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
     </LinearLayout>
 
     <LinearLayout
@@ -108,18 +143,26 @@
 
         <ImageView
             android:id="@+id/product5Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/muttonsukkah"
             android:contentDescription="@string/product5_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUTTON SUKKAH - $35.00"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product5Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 5" />
+            android:text="A D D "
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
     </LinearLayout>
 
     <LinearLayout
@@ -130,18 +173,26 @@
 
         <ImageView
             android:id="@+id/product6Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/fishthali"
             android:contentDescription="@string/product6_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALVANI FISH THALI - $60.00"
+            android:textStyle="bold"
+            />
 
         <Button
             android:id="@+id/product6Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 6" />
+            android:text="A D D"
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
     </LinearLayout>
 
     <LinearLayout
@@ -152,18 +203,26 @@
 
         <ImageView
             android:id="@+id/product7Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/pithlabhakri"
             android:contentDescription="@string/product7_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PITHLA BHAKRI - $70.00"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/product7Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 7" />
+            android:text="A D D"
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -173,18 +232,25 @@
 
         <ImageView
             android:id="@+id/product8Image"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/resource__"
+            android:src="@drawable/pavbhaji"
             android:contentDescription="@string/product8_description"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAV BHAJI - $80.00"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/product8Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product 8" />
-    </LinearLayout>
-
+            android:text="A D D"
+            android:textStyle="bold"
+            android:backgroundTint="#6D0016"/>
+        </LinearLayout>
 </LinearLayout>

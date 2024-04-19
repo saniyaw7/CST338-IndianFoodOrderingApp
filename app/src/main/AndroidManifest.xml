@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Pithlabhakri"
         tools:targetApi="31">
 
-        <activity android:name=".LoginActivity"
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +21,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".LandingPage"></activity>
         <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+
 
     </application>
 </manifest>

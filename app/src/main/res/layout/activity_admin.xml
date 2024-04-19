@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#FF914D">
+
+    <ImageView
+        android:id="@+id/product8Image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/product8_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pblogo" />
 
     <TextView
         android:id="@+id/adminText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="10dp"
         android:text="Welcome to Admin Area"
-        android:layout_marginTop="32dp"
-        android:gravity="center"/>
+        android:textAlignment="center"
+        android:textColor="#6D0016"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/changeMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#6D0016"
+        android:text="Change Menu"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/browseDatabaseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6D0016"
+        android:layout_marginEnd="70dp"
+        android:textSize="15sp"
+        android:layout_marginStart="70dp"
+        android:layout_below="@id/changeMenuBtn"
+        android:layout_marginTop="10dp"
+        android:text="Browse Database" />
+
+</RelativeLayout>

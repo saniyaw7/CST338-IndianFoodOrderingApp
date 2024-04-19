@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#FF914D"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
-        android:id="@+id/appNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+    <ImageView
+        android:id="@+id/product8Image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pblogo"
+        android:contentDescription="@string/product8_description"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:textStyle="bold"
+        android:backgroundTint="#6D0016"
         android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/createAccountBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create an account"/>
+        android:text="Create account"
+        android:textStyle="bold"
+        android:backgroundTint="#6D0016"
+        android:layout_marginBottom="16dp"/>
 </LinearLayout>

@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         createAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Implement create account functionality
-                // For this assignment, it could be a simple registration page
+                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
     }
