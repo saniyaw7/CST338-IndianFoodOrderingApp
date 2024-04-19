@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center_horizontal"
-    android:background="#FF914D"
-    >
-    
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="#FF914D">
+
     <!-- Image and Button for Product 1 -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +24,7 @@
         <ImageView
             android:id="@+id/product1Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/vadapav"
             android:contentDescription="@string/product1_description"
             android:scaleType="centerCrop"
@@ -51,7 +55,7 @@
         <ImageView
             android:id="@+id/product2Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/biryani"
             android:contentDescription="@string/product2_description"
             android:scaleType="centerCrop"
@@ -83,7 +87,7 @@
         <ImageView
             android:id="@+id/product3Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/poha"
             android:contentDescription="@string/product3_description"
             android:scaleType="centerCrop"
@@ -114,7 +118,7 @@
         <ImageView
             android:id="@+id/product4Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/thali"
             android:contentDescription="@string/product4_description"
             android:scaleType="centerCrop"
@@ -144,7 +148,7 @@
         <ImageView
             android:id="@+id/product5Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/muttonsukkah"
             android:contentDescription="@string/product5_description"
             android:scaleType="centerCrop"
@@ -174,7 +178,7 @@
         <ImageView
             android:id="@+id/product6Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/fishthali"
             android:contentDescription="@string/product6_description"
             android:scaleType="centerCrop"
@@ -204,7 +208,7 @@
         <ImageView
             android:id="@+id/product7Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/pithlabhakri"
             android:contentDescription="@string/product7_description"
             android:scaleType="centerCrop"
@@ -233,7 +237,7 @@
         <ImageView
             android:id="@+id/product8Image"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/pavbhaji"
             android:contentDescription="@string/product8_description"
             android:scaleType="centerCrop"
@@ -253,4 +257,5 @@
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
