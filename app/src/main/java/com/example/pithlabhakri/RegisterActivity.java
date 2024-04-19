@@ -1,6 +1,7 @@
 package com.example.pithlabhakri;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button registerButton;
+    private AppDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +27,39 @@ public class RegisterActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordEditText);
         registerButton = findViewById(R.id.registerButton);
 
+        db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "database-name").build();
+
         // Set click listener for the register button
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Retrieve username and password entered by the user
-                String username = usernameEditText.getText().toString().trim();
-                String password = passwordEditText.getText().toString().trim();
+                final String username = usernameEditText.getText().toString().trim();
+                final String password = passwordEditText.getText().toString().trim();
 
                 // Perform registration logic (e.g., validation, saving to database)
-                // For simplicity, let's just display a toast message with the entered data
-                String message = "Username: " + username + "\nPassword: " + password;
-                Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        User user = new User();
+                        user.username = username;
+                        user.password = password;
+                        db.userDao().insert(user);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }).start();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
     }
 }
