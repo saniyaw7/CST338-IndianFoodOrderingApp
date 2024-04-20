@@ -26,6 +26,7 @@
         <activity android:name=".LandingPage"></activity>
         <activity android:name=".AdminActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".BrowseDatabaseActivity"></activity>
 
 
     </application>

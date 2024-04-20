@@ -31,10 +31,9 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Handle "Browse Database" button click
-                // Add your logic to navigate or perform actions related to browsing the database
-                // Example:
-                // Intent intent = new Intent(AdminActivity.this, BrowseDatabaseActivity.class);
-                // startActivity(intent);
+                // Navigate to BrowseDatabaseActivity
+                Intent intent = new Intent(AdminActivity.this, BrowseDatabaseActivity.class);
+                startActivity(intent);
             }
         });
     }
