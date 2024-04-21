@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class LoginActivity extends AppCompatActivity {
@@ -61,9 +60,18 @@ public class LoginActivity extends AppCompatActivity {
             try {
                 if (db != null && db.userDao() != null) {
                     User user = db.userDao().findUserByUsernameAndPassword(username, password);
-                    if (user != null) {
+
+                    // Check for admin accounts
+                    if (("admin1".equals(username) && "admin123".equals(password)) ||
+                            ("admin2".equals(username) && "admin456".equals(password))) {
                         runOnUiThread(() -> {
-                            navigateToLandingPage();
+                            navigateToAdminActivity(true);  // Navigate to AdminActivity with isAdmin=true
+                        });
+                    }
+                    // Check for regular user
+                    else if (user != null) {
+                        runOnUiThread(() -> {
+                            navigateToMenuActivity(user);  // Navigate to MenuActivity with user details
                         });
                     } else {
                         runOnUiThread(() -> {
@@ -84,8 +92,16 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void navigateToLandingPage() {
+    private void navigateToAdminActivity(boolean isAdmin) {
+        Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
+        intent.putExtra("isAdmin", isAdmin);  // Pass isAdmin flag to AdminActivity
+        startActivity(intent);
+        finish();
+    }
+
+    private void navigateToMenuActivity(User user) {
         Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+        intent.putExtra("userId", user.getId());  // Pass userId to MenuActivity
         startActivity(intent);
         finish();
     }
