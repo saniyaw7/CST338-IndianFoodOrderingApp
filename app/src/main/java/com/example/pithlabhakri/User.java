@@ -11,7 +11,6 @@ public class User {
 
     public String username;
     public String password;
-    public boolean isAdmin; // Add this field
 
     public int getId() {
         return id;
@@ -35,13 +34,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
     }
 }

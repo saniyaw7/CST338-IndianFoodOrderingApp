@@ -40,20 +40,30 @@ public class RegisterActivity extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        User user = new User();
-                        user.username = username;
-                        user.password = password;
-                        db.userDao().insert(user);
+                        try {
+                            User user = new User();
+                            user.username = username;
+                            user.password = password;
+                            db.userDao().insert(user);
 
-                        // Show toast message for successful registration
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(RegisterActivity.this, "Error registering user", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                        }
                     }
                 }).start();
+
             }
         });
     }

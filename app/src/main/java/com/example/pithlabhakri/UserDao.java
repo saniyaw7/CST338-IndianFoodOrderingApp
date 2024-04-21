@@ -13,10 +13,7 @@ public interface UserDao {
     void insert(User user);
 
     @Query("SELECT * FROM User WHERE username = :username AND password = :password")
-    User findUserByUsernameAndPassword(String username, String password); // To retrieve isAdmin
-
-    @Query("SELECT * FROM User WHERE username = :username AND password = :password AND isAdmin = 1")
-    User findAdminByUsernameAndPassword(String username, String password);
+    User findUserByUsernameAndPassword(String username, String password);
 
     @Query("SELECT * FROM User")
     List<User> getAllUsers();
