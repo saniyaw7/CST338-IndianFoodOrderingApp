@@ -16,16 +16,20 @@ public class MainActivity extends AppCompatActivity {
         Button loginBtn = findViewById(R.id.loginBtn);
         Button createAccountBtn = findViewById(R.id.createAccountBtn);
 
+        // Set click listener for the Login button
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Start LoginActivity
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
 
+        // Set click listener for the Create Account button
         createAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Start RegisterActivity
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
