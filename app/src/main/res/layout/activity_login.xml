@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
+    tools:context=".LoginActivity"
     android:gravity="center"
-    android:background="#FF914D"
-    >
+    android:background="#FF914D">
+
+    <!-- Navigation Bar -->
+    <RelativeLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF914D">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:onClick="onBackPressed"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#6D0016"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/product8Image"
@@ -15,19 +45,26 @@
         android:src="@drawable/pblogo"
         android:contentDescription="@string/product8_description"
         android:scaleType="centerCrop"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/navBar"
         android:layout_marginBottom="8dp"/>
 
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_below="@id/product8Image"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:hint="Username" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword" />
 
@@ -35,6 +72,8 @@
         android:id="@+id/userTypeRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -42,8 +81,7 @@
             android:id="@+id/userRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User"
-            />
+            android:text="User" />
 
         <RadioButton
             android:id="@+id/adminRadioButton"
@@ -53,15 +91,15 @@
     </RadioGroup>
 
     <Button
-
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/userTypeRadioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
         android:backgroundTint="#6D0016"
         android:textSize="15sp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
         android:text="Login" />
 
-</LinearLayout>
+</RelativeLayout>

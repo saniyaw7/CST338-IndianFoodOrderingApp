@@ -6,11 +6,13 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.concurrent.Executors;
@@ -20,8 +22,10 @@ public class LoginActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
     private Button loginBtn;
+    private ImageButton backButton; // Back button on the navigation bar
     private AppDatabase db;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         username = findViewById(R.id.usernameEditText);
         password = findViewById(R.id.passwordEditText);
         loginBtn = findViewById(R.id.loginBtn);
+        backButton = findViewById(R.id.backButton); // Initialize back button
 
         db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "database-name")
                 .addCallback(new RoomDatabase.Callback() {
@@ -51,6 +56,14 @@ public class LoginActivity extends AppCompatActivity {
                 String enteredUsername = username.getText().toString();
                 String enteredPassword = password.getText().toString();
                 validateCredentials(enteredUsername, enteredPassword);
+            }
+        });
+
+        // Set click listener for the back button
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }
@@ -104,5 +117,11 @@ public class LoginActivity extends AppCompatActivity {
         intent.putExtra("userId", user.getId());  // Pass userId to MenuActivity
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Add any additional logic you want to execute when the back button is pressed
     }
 }
