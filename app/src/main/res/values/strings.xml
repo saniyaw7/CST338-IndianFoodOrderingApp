@@ -8,5 +8,8 @@
     <string name="product6_description">L6</string>
     <string name="product7_description">L7</string>
     <string name="product8_description">L8</string>
+    <string name="your_cart">Your cart</string>
+    <string name="a_d_d">A D D</string>
+    <string name="pav_bhaji_80_00">PAV BHAJI - $80.00</string>
 
 </resources>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,12 +15,34 @@
         android:gravity="center_horizontal"
         android:background="#FF914D">
 
-    <!-- Image and Button for Product 1 -->
-    <LinearLayout
+        <!-- Image and Button for Product 1 -->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="-100dp"
+            android:background="#FF914D"
+            android:src="@drawable/cart">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            android:text="@string/your_cart">
+
+        </TextView>
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp">
 
         <ImageView
             android:id="@+id/product1Image"
@@ -55,6 +78,7 @@
         <ImageView
             android:id="@+id/product2Image"
             android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
             android:layout_height="200dp"
             android:src="@drawable/biryani"
             android:contentDescription="@string/product2_description"
@@ -88,6 +112,7 @@
             android:id="@+id/product3Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/poha"
             android:contentDescription="@string/product3_description"
             android:scaleType="centerCrop"
@@ -119,6 +144,7 @@
             android:id="@+id/product4Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/thali"
             android:contentDescription="@string/product4_description"
             android:scaleType="centerCrop"
@@ -149,6 +175,7 @@
             android:id="@+id/product5Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/muttonsukkah"
             android:contentDescription="@string/product5_description"
             android:scaleType="centerCrop"
@@ -179,6 +206,7 @@
             android:id="@+id/product6Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/fishthali"
             android:contentDescription="@string/product6_description"
             android:scaleType="centerCrop"
@@ -209,6 +237,7 @@
             android:id="@+id/product7Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/pithlabhakri"
             android:contentDescription="@string/product7_description"
             android:scaleType="centerCrop"
@@ -238,6 +267,7 @@
             android:id="@+id/product8Image"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/pavbhaji"
             android:contentDescription="@string/product8_description"
             android:scaleType="centerCrop"
@@ -246,14 +276,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PAV BHAJI - $80.00"
+            android:text="@string/pav_bhaji_80_00"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/product8Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A D D"
+            android:text="@string/a_d_d"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
         </LinearLayout>
