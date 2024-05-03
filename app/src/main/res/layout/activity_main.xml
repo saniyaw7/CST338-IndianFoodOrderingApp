@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/product8Image"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:src="@drawable/pblogo"
         android:contentDescription="@string/product8_description"
         android:scaleType="centerCrop"

@@ -33,7 +33,7 @@ public class BrowseDatabaseActivity extends AppCompatActivity {
                 }
 
                 // Display the data
-                TextView textView = findViewById(R.id.textView);
+                TextView textView = findViewById(R.id.userTypeRadioGroup);
                 textView.setText(usersString.toString());
             }
         }).start();

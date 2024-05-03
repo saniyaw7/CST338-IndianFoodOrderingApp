@@ -23,18 +23,9 @@
             android:src="@android:drawable/ic_media_previous"
             android:layout_centerVertical="true"
             android:layout_marginStart="16dp"
+            android:background="#FF914D"
             android:onClick="onBackPressed"/>
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textColor="#6D0016"
-            android:textSize="18sp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
 
     </RelativeLayout>
 
@@ -96,10 +87,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/userTypeRadioGroup"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="#6D0016"
         android:textSize="15sp"
         android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#230007"
+        android:text="Previous Page" />
 
 </RelativeLayout>

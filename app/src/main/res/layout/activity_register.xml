@@ -12,8 +12,9 @@
 
     <RelativeLayout
         android:id="@+id/navBar"
-        android:layout_width="match_parent"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-70dp"
         android:background="#FF914D">
 
         <!-- Back Button -->
@@ -24,26 +25,17 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="16dp"
             android:onClick="onBackPressed"
+            android:background="#FF914D"
             android:src="@android:drawable/ic_media_previous" />
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Register"
-            android:textColor="#6D0016"
-            android:textSize="18sp" />
 
     </RelativeLayout>
 
     <ImageView
         android:id="@+id/product8Image"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/product8_description"
         android:scaleType="centerCrop"
@@ -54,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/navBar"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="300dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:hint="Enter username"
@@ -65,20 +57,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/usernameEditText"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_marginBottom="8dp"
         android:hint="Enter password"
         android:inputType="textPassword" />
 
     <!-- Show Password CheckBox -->
+
     <CheckBox
         android:id="@+id/showPasswordCheckBox"
-        android:layout_width="87dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/passwordEditText"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="1dp"
         android:text="Show Password" />
 
     <TextView
@@ -89,6 +83,7 @@
         android:layout_marginBottom="8dp"
         android:text="Password criteria:\n- At least 8 characters\n- A mixture of uppercase and lowercase letters\n- A mixture of letters and numbers\n- At least one special character: ! @ # ? ]"
         android:textColor="#6D0016"
+        android:layout_marginLeft="20dp"
         android:textSize="12sp"/>
 
     <Button
@@ -98,11 +93,20 @@
         android:layout_below="@id/passwordCriteriaTextView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="#6D0016"
         android:gravity="center"
         android:text="Register" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-63dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#230007"
+        android:text="Previous Page" />
 
 </RelativeLayout>

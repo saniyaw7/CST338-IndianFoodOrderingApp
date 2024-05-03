@@ -38,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
         product1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 1", "Description 1", "$9.99");
+                showProductDetails("Vada Pav", "Indian street food", "$9.99");
             }
         });
 
@@ -46,7 +46,7 @@ public class MenuActivity extends AppCompatActivity {
         product2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 2", "Description 2", "$20.00");
+                showProductDetails("Chicken Biryani", "Marinated Chicken with aromatic rice", "$20.00");
             }
         });
 
