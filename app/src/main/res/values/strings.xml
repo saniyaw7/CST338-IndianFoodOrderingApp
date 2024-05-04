@@ -11,5 +11,11 @@
     <string name="your_cart">Your cart</string>
     <string name="a_d_d">A D D</string>
     <string name="pav_bhaji_80_00">PAV BHAJI - $80.00</string>
+    <string name="malvani_fish_thali_60_00">MALVANI FISH THALI - $60.00</string>
+    <string name="veg_a_hearty_maharashtrian_staple_combining_gram_flour_curry_with_unleavened_millet_bread_for_a_satisfying_and_wholesome_meal">VEG - A hearty Maharashtrian staple combining gram flour curry with unleavened millet bread for a satisfying and wholesome meal.</string>
+    <string name="pithla_bhakri_70_00">PITHLA BHAKRI - $70.00</string>
+    <string name="vada_pav_9_99">VADA PAV - $9.99</string>
+    <string name="veg_indian_street_food_spicy_potato_fritter_vada_sandwiched_between_a_soft_bun_pav">VEG - Indian street food, spicy potato fritter (vada) sandwiched between a soft bun (pav)</string>
+    <string name="chicken_biryani_20_00">CHICKEN BIRYANI - $20.00</string>
 
 </resources>

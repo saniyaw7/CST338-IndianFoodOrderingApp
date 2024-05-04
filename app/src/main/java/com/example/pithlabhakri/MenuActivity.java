@@ -54,7 +54,7 @@ public class MenuActivity extends AppCompatActivity {
         product3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 3", "Description 3", "$15.00");
+                showProductDetails("Poha", "flattened rice cooked with onions, potatoes, peanuts, and spices", "$15.00");
             }
         });
 
@@ -62,7 +62,7 @@ public class MenuActivity extends AppCompatActivity {
         product4Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 4", "Description 4", "$40.00");
+                showProductDetails("Veg Kolhapuri Thali", "Spicy single platter", "$40.00");
             }
         });
 
@@ -70,7 +70,7 @@ public class MenuActivity extends AppCompatActivity {
         product5Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 5", "Description 5", "$35.00");
+                showProductDetails("Mutton Sukkah", "Mutton cooked with fiery spices", "$35.00");
             }
         });
 
@@ -78,7 +78,7 @@ public class MenuActivity extends AppCompatActivity {
         product6Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 6", "Description 6", "$60.00");
+                showProductDetails("Malvani Fish Thali", "A coastal feast", "$60.00");
             }
         });
 
@@ -86,7 +86,7 @@ public class MenuActivity extends AppCompatActivity {
         product7Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 7", "Description 7", "$70.00");
+                showProductDetails("Pithla Bhakri", "Gram flour curry with millet bread", "$70.00");
             }
         });
 
@@ -94,7 +94,7 @@ public class MenuActivity extends AppCompatActivity {
         product8Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Product 8", "Description 8", "$80.00");
+                showProductDetails("Pab Bhaji", "Spicy vegetable mash served with buttered bread rolls", "$80.00");
             }
         });
     }
