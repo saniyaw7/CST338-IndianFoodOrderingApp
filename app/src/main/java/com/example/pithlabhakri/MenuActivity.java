@@ -38,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
         product1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Vada Pav", "Indian street food", "$9.99");
+                showProductDetails("Vada Pav", "Added to your cart");
             }
         });
 
@@ -46,7 +46,7 @@ public class MenuActivity extends AppCompatActivity {
         product2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Chicken Biryani", "Marinated Chicken with aromatic rice", "$20.00");
+                showProductDetails("Chicken Biryani", "Added to your cart");
             }
         });
 
@@ -54,7 +54,7 @@ public class MenuActivity extends AppCompatActivity {
         product3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Poha", "flattened rice cooked with onions, potatoes, peanuts, and spices", "$15.00");
+                showProductDetails("Poha", "Added to your cart");
             }
         });
 
@@ -62,7 +62,7 @@ public class MenuActivity extends AppCompatActivity {
         product4Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Veg Kolhapuri Thali", "Spicy single platter", "$40.00");
+                showProductDetails("Veg Kolhapuri Thali", "Added to your cart");
             }
         });
 
@@ -70,7 +70,7 @@ public class MenuActivity extends AppCompatActivity {
         product5Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Mutton Sukkah", "Mutton cooked with fiery spices", "$35.00");
+                showProductDetails("Mutton Sukkah", "Added to your cart");
             }
         });
 
@@ -78,7 +78,7 @@ public class MenuActivity extends AppCompatActivity {
         product6Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Malvani Fish Thali", "A coastal feast", "$60.00");
+                showProductDetails("Malvani Fish Thali", "Added to your cart");
             }
         });
 
@@ -86,7 +86,7 @@ public class MenuActivity extends AppCompatActivity {
         product7Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Pithla Bhakri", "Gram flour curry with millet bread", "$70.00");
+                showProductDetails("Pithla Bhakri", "Added to your cart");
             }
         });
 
@@ -94,16 +94,14 @@ public class MenuActivity extends AppCompatActivity {
         product8Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Pab Bhaji", "Spicy vegetable mash served with buttered bread rolls", "$80.00");
+                showProductDetails("Pab Bhaji", "Added to your cart");
             }
         });
     }
 
-    private void showProductDetails(String productName, String description, String price) {
+    private void showProductDetails(String productName, String description) {
         String productDetails = "Name: " + productName + "\n"
-                + "Description: " + description + "\n"
-                + "Price: " + price;
-
+                + "YAYY! " + description + "\n";
         Toast.makeText(this, productDetails, Toast.LENGTH_LONG).show();
     }
 }

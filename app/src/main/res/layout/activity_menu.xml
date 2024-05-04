@@ -103,7 +103,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NON VEG - Marinated Chicken with aromatic rice"
+            android:text="@string/non_veg_marinated_chicken_with_aromatic_rice"
             android:textStyle="italic" />
 
         <Button
@@ -136,7 +136,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="POHA - $15.00"
+            android:text="@string/poha_15_00"
             android:textColor="#000000"
             android:textStyle="bold"
             />
@@ -144,7 +144,7 @@
         <TextView
             android:layout_width="322dp"
             android:layout_height="wrap_content"
-            android:text="VEG - Indian breakfast dish made from flattened rice cooked with onions, potatoes, peanuts, and spices"
+            android:text="@string/veg_indian_breakfast_dish_made_from_flattened_rice_cooked_with_onions_potatoes_peanuts_and_spices"
             android:textStyle="italic" />
 
         <Button
@@ -176,7 +176,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="VEG KOLHAPURI THALI - $40.00"
+            android:text="@string/veg_kolhapuri_thali_40_00"
             android:textColor="#000000"
             android:textStyle="bold"
             />
@@ -184,7 +184,7 @@
         <TextView
             android:layout_width="319dp"
             android:layout_height="wrap_content"
-            android:text="VEG - A flavorful spread of spicy vegetarian dishes from Maharashtra, celebrating regional cuisine in a single platter."
+            android:text="@string/veg_a_flavorful_spread_of_spicy_vegetarian_dishes_from_maharashtra_celebrating_regional_cuisine_in_a_single_platter"
             android:textStyle="italic" />
 
 
@@ -216,14 +216,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MUTTON SUKKAH - $35.00"
+            android:text="@string/mutton_sukkah_35_00"
             android:textColor="#000000"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="319dp"
             android:layout_height="wrap_content"
-            android:text="NON VEG - Succulent morsels of tender mutton cooked with fiery spices in a dry, aromatic gravy, epitomizing the bold flavors of South Indian cuisine."
+            android:text="@string/non_veg_succulent_morsels_of_tender_mutton_cooked_with_fiery_spices_in_a_dry_aromatic_gravy_epitomizing_the_bold_flavors_of_south_indian_cuisine"
             android:textStyle="italic" />
 
         <Button
@@ -262,7 +262,7 @@
         <TextView
             android:layout_width="319dp"
             android:layout_height="wrap_content"
-            android:text="NON VEG - A coastal feast showcasing the best of Malvani cuisine with spicy fish curry, crispy fried fish, and traditional accompaniments, delivering a burst of coastal flavors in every bite. "
+            android:text="@string/non_veg_a_coastal_feast_showcasing_the_best_of_malvani_cuisine_with_spicy_fish_curry_crispy_fried_fish_and_traditional_accompaniments_delivering_a_burst_of_coastal_flavors_in_every_bite"
             android:textStyle="italic" />
 
 
@@ -341,7 +341,7 @@
         <TextView
             android:layout_width="304dp"
             android:layout_height="wrap_content"
-            android:text="VEG - A Mumbai street food classic, featuring a spicy vegetable mash served with buttered bread rolls, delivering a burst of flavors in every bite."
+            android:text="@string/veg_a_mumbai_street_food_classic_featuring_a_spicy_vegetable_mash_served_with_buttered_bread_rolls_delivering_a_burst_of_flavors_in_every_bite"
             android:textStyle="italic" />
 
         <Button

@@ -35,7 +35,7 @@
         android:id="@+id/product8Image"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="-40dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/product8_description"
         android:scaleType="centerCrop"
@@ -46,10 +46,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/navBar"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:hint="Enter username"
+        android:hint="@string/enter_username"
         android:inputType="text" />
 
     <EditText
@@ -60,7 +60,7 @@
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:layout_marginBottom="8dp"
-        android:hint="Enter password"
+        android:hint="@string/enter_password"
         android:inputType="textPassword" />
 
     <!-- Show Password CheckBox -->
@@ -69,21 +69,21 @@
         android:id="@+id/showPasswordCheckBox"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/passwordEditText"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="1dp"
-        android:text="Show Password" />
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/show_password" />
 
     <TextView
         android:id="@+id/passwordCriteriaTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginBottom="8dp"
-        android:text="Password criteria:\n- At least 8 characters\n- A mixture of uppercase and lowercase letters\n- A mixture of letters and numbers\n- At least one special character: ! @ # ? ]"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-100dp"
+        android:text="@string/password_criteria_n_at_least_8_characters_n_a_mixture_of_uppercase_and_lowercase_letters_n_a_mixture_of_letters_and_numbers_n_at_least_one_special_character"
         android:textColor="#6D0016"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:textSize="12sp"/>
 
     <Button
@@ -94,19 +94,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="#6D0016"
         android:gravity="center"
-        android:text="Register" />
+        android:text="@string/register" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-63dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:textColor="#230007"
-        android:text="Previous Page" />
+        android:text="@string/previous_page" />
 
 </RelativeLayout>
