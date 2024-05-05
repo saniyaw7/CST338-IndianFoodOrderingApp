@@ -17,5 +17,25 @@
     <string name="vada_pav_9_99">VADA PAV - $9.99</string>
     <string name="veg_indian_street_food_spicy_potato_fritter_vada_sandwiched_between_a_soft_bun_pav">VEG - Indian street food, spicy potato fritter (vada) sandwiched between a soft bun (pav)</string>
     <string name="chicken_biryani_20_00">CHICKEN BIRYANI - $20.00</string>
+    <string name="non_veg_marinated_chicken_with_aromatic_rice">NON VEG - Marinated Chicken with aromatic rice</string>
+    <string name="poha_15_00">POHA - $15.00</string>
+    <string name="veg_indian_breakfast_dish_made_from_flattened_rice_cooked_with_onions_potatoes_peanuts_and_spices">VEG - Indian breakfast dish made from flattened rice cooked with onions, potatoes, peanuts, and spices</string>
+    <string name="veg_kolhapuri_thali_40_00">VEG KOLHAPURI THALI - $40.00</string>
+    <string name="veg_a_flavorful_spread_of_spicy_vegetarian_dishes_from_maharashtra_celebrating_regional_cuisine_in_a_single_platter">VEG - A flavorful spread of spicy vegetarian dishes from Maharashtra, celebrating regional cuisine in a single platter.</string>
+    <string name="non_veg_succulent_morsels_of_tender_mutton_cooked_with_fiery_spices_in_a_dry_aromatic_gravy_epitomizing_the_bold_flavors_of_south_indian_cuisine">NON VEG - Succulent morsels of tender mutton cooked with fiery spices in a dry, aromatic gravy, epitomizing the bold flavors of South Indian cuisine.</string>
+    <string name="mutton_sukkah_35_00">MUTTON SUKKAH - $35.00</string>
+    <string name="non_veg_a_coastal_feast_showcasing_the_best_of_malvani_cuisine_with_spicy_fish_curry_crispy_fried_fish_and_traditional_accompaniments_delivering_a_burst_of_coastal_flavors_in_every_bite">NON VEG - A coastal feast showcasing the best of Malvani cuisine with spicy fish curry, crispy fried fish, and traditional accompaniments, delivering a burst of coastal flavors in every bite.</string>
+    <string name="veg_a_mumbai_street_food_classic_featuring_a_spicy_vegetable_mash_served_with_buttered_bread_rolls_delivering_a_burst_of_flavors_in_every_bite">VEG - A Mumbai street food classic, featuring a spicy vegetable mash served with buttered bread rolls, delivering a burst of flavors in every bite.</string>
+    <string name="show_password">Show Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
+    <string name="login">Login</string>
+    <string name="password_criteria_n_at_least_8_characters_n_a_mixture_of_uppercase_and_lowercase_letters_n_a_mixture_of_letters_and_numbers_n_at_least_one_special_character">Password criteria:\n- At least 8 characters\n- A mixture of uppercase and lowercase letters\n- A mixture of letters and numbers\n- At least one special character: ! @ # ? ]</string>
+    <string name="register">Register</string>
+    <string name="previous_page">Previous Page</string>
+    <string name="enter_username">Enter username</string>
+    <string name="your_cart1">Your Cart</string>
+    <string name="quantity">Quantity</string>
 
 </resources>
