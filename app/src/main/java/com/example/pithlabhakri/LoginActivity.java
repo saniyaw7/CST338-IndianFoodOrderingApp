@@ -28,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox showPasswordCheckBox; // CheckBox for "Show Password"
 
     private ImageButton backButton; // Back button on the navigation bar
+
+
     private AppDatabase db;
 
     @SuppressLint("MissingInflatedId")
@@ -138,11 +140,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        // Add any additional logic you want to execute when the back button is pressed
     }
-
 }

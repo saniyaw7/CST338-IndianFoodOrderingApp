@@ -1,9 +1,12 @@
 package com.example.pithlabhakri;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -33,6 +36,9 @@ public class MenuActivity extends AppCompatActivity {
         Button product6Btn = findViewById(R.id.product6Btn);
         Button product7Btn = findViewById(R.id.product7Btn);
         Button product8Btn = findViewById(R.id.product8Btn);
+
+        ImageButton cartButton = findViewById(R.id.cart_button);
+
 
         // Set OnClickListener for Product 1 Button
         product1Btn.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +101,14 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showProductDetails("Pab Bhaji", "Added to your cart");
+            }
+        });
+
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start RegisterActivity
+                startActivity(new Intent(MenuActivity.this, CartActivity.class));
             }
         });
     }
