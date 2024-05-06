@@ -37,5 +37,19 @@
     <string name="enter_username">Enter username</string>
     <string name="your_cart1">Your Cart</string>
     <string name="quantity">Quantity</string>
+    <string name="Directed_to_cart">directedTocart</string>
+    <string name="go_to_cart">GO_TO_CART</string>
+    <string name="mutton_sukkah">Mutton Sukkah</string>
+    <string name="poha">Poha</string>
+    <string name="chicken_biryani1">Chicken Biryani</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="name1">Name</string>
+    <string name="checkout2">CHECKOUT</string>
+    <string name="surname">Surname</string>
+    <string name="address">Address</string>
+    <string name="name4">Name</string>
+    <string name="surname3">Surname</string>
+    <string name="address8">Address</string>
+    <string name="confirm_order">Confirm Order</string>
 
 </resources>

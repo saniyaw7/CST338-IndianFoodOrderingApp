@@ -7,39 +7,16 @@
     android:fillViewport="true"
     >
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#FF914D">
+
+    <!-- Image and Button for Product 1 -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:gravity="center_horizontal"
-        android:background="#FF914D">
-
-        <!-- Image and Button for Product 1 -->
-
-        <ImageButton
-            android:id="@+id/cart_button"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginBottom="-100dp"
-            android:background="#FF914D"
-            android:src="@drawable/cart"
-            android:onClick="goToCart"
-            android:contentDescription="@string/go_to_cart">
-        </ImageButton>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="150dp"
-            android:text="@string/your_cart">
-
-        </TextView>
-
-        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -62,13 +39,13 @@
             android:textStyle="bold"
             />
 
-            <TextView
-                android:layout_width="276dp"
-                android:layout_height="wrap_content"
-                android:text="@string/veg_indian_street_food_spicy_potato_fritter_vada_sandwiched_between_a_soft_bun_pav"
-                android:textStyle="italic" />
+        <TextView
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:text="@string/veg_indian_street_food_spicy_potato_fritter_vada_sandwiched_between_a_soft_bun_pav"
+            android:textStyle="italic" />
 
-            <Button
+        <Button
             android:id="@+id/product1Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,6 +53,15 @@
             android:backgroundTint="#6D0016"
             android:text=" A D D"
             android:textStyle="bold" />
+        <Button
+            android:id="@+id/product1Btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <!-- Image and Button for Product 2 -->
@@ -117,6 +103,16 @@
             android:backgroundTint="#6D0016"
             android:textStyle="bold"
             />
+        <Button
+            android:id="@+id/product1Btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
+
+
     </LinearLayout>
 
     <!-- Image and Button for Product 3 -->
@@ -157,6 +153,15 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
+        <Button
+            android:id="@+id/product1Btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <!-- Image and Button for Product 4 -->
@@ -198,6 +203,15 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
+        <Button
+            android:id="@+id/product1Btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -236,6 +250,16 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
+
+        <Button
+            android:id="@+id/product1Btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -276,6 +300,14 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
+        <Button
+            android:id="@+id/product1Btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -316,6 +348,14 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
+        <Button
+            android:id="@+id/product1Btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -354,6 +394,14 @@
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:backgroundTint="#6D0016"/>
-        </LinearLayout>
+        <Button
+            android:id="@+id/product1Btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6D0016"
+            android:text="D E L E T E"
+            android:textStyle="bold" />
     </LinearLayout>
+</LinearLayout>
 </ScrollView>

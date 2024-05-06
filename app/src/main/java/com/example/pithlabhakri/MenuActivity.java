@@ -100,7 +100,7 @@ public class MenuActivity extends AppCompatActivity {
         product8Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProductDetails("Pab Bhaji", "Added to your cart");
+                showProductDetails("Pav Bhaji", "Added to your cart");
             }
         });
 

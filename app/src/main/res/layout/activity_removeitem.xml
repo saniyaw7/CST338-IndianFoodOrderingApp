@@ -13,7 +13,7 @@
         android:id="@+id/product8Image"
         android:layout_width="241dp"
         android:layout_height="151dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="-40dp"
         android:contentDescription="@string/product8_description"
         android:scaleType="centerCrop"
         android:src="@drawable/pblogo"
@@ -51,7 +51,7 @@
         android:id="@+id/textView3"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="-70dp"
         android:text="@string/mutton_sukkah"
         android:textColor="#230007"
@@ -59,7 +59,6 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/removeitem1"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:layout_marginStart="115dp"
@@ -67,41 +66,6 @@
         android:backgroundTint="#6D0016"
         android:text="REMOVE"
         android:textSize="14sp">
-
-    </Button>
-
-    <ImageView
-        android:id="@+id/product3Image"
-        android:layout_width="93dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="110dp"
-        android:contentDescription="@string/product3_description"
-        android:scaleType="centerCrop"
-        android:src="@drawable/poha"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="318dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="87dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="-70dp"
-        android:text= "@string/poha"
-        android:textColor="#230007"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/removeitem2"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:text="REMOVE"
-        android:textSize="14sp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="-5dp"
-        android:backgroundTint="#6D0016">
 
     </Button>
 
@@ -123,21 +87,31 @@
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="-70dp"
-        android:text="Chicken Biryani"
+        android:text="@string/chicken_biryani1"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="#230007" />
     <Button
-        android:id="@+id/removeitem3"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:text="REMOVE"
         android:textSize="14sp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="-45dp"
+        android:layout_marginTop="-40dp"
         android:backgroundTint="#6D0016">
 
     </Button>
 
+    <Button
+        android:id="@+id/removebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="@string/checkout"
+        android:textSize="14sp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#6D0016">
+
+    </Button>
 
 </LinearLayout>

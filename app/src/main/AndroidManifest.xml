@@ -21,13 +21,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".LandingPage"></activity>
-        <activity android:name=".AdminActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".BrowseDatabaseActivity"></activity>
-        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".LoginActivity"> </activity>
+        <activity android:name=".MenuActivity"> </activity>
+        <activity android:name=".LandingPage"> </activity>
+        <activity android:name=".AdminActivity"> </activity>
+        <activity android:name=".RegisterActivity"> </activity>
+        <activity android:name=".BrowseDatabaseActivity"> </activity>
+        <activity android:name=".CartActivity"> </activity>
+        <activity android:name=".ChangeMenu"> </activity>
+        <activity android:name=".RemoveItemActivity"> </activity>
+        <activity android:name=".CheckoutActivity"> </activity>
+
 
 
     </application>
